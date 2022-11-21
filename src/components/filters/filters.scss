@@ -1,0 +1,51 @@
+@use "../../shared/scss/" as *;
+
+.filters {
+  margin-top: 20px;
+  display: flex;
+  width: fit-content;
+  height: 40px;
+  gap: 5px;
+  flex-direction: row;
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    color: $blue;
+    padding: 8px;
+    color: $blue;
+    border: 1px solid #c6cce0;
+    border-radius: 8px;
+    background: none;
+
+    &--delete {
+      font-size: 22px;
+      color: $blue;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+
+  &__clear {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px;
+    color: $blue;
+    border: 1px solid #c6cce0;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      background: $blue;
+    }
+  }
+}

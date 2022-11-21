@@ -1,0 +1,13 @@
+@use "../../shared/scss/" as *;
+
+.settings {
+  border: none;
+  width: fit-content;
+  color: $blue;
+  background: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
